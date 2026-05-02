@@ -44,7 +44,7 @@ export default function Home() {
           onClick={() => navigate("/about")}
           className="
             absolute 
-            top-[33%] left-[34.5%]
+            top-[33%] left-[35%]
             sm:top-[35%] sm:left-[35%]
             lg:top-[37%] lg:left-[37%]
 
@@ -63,7 +63,7 @@ export default function Home() {
           onClick={() => window.open("https://instagram.com", "_blank")}
           className="
             absolute 
-            top-[30.5%] left-[46.5%]
+            top-[30.5%] left-[47%]
             sm:top-[33%] sm:left-[47%]
             lg:top-[34.5%] lg:left-[48.5%]
 
