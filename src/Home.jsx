@@ -13,14 +13,12 @@ export default function Home() {
 
       <div className="relative flex justify-center items-center w-full">
         
-        {/* Image */}
         <img
           src={sewerMap}
           alt="Sewer Map"
           className="w-screen h-auto object-contain"
         />
 
-        {/* Interviews */}
         <button
           onClick={() => navigate("/interviews")}
           className="
@@ -39,12 +37,11 @@ export default function Home() {
           interviews
         </button>
 
-        {/* About */}
         <button
           onClick={() => navigate("/about")}
           className="
             absolute 
-            top-[33%] left-[35%]
+            top-[33%] left-[35.5%]
             sm:top-[35%] sm:left-[35%]
             lg:top-[37%] lg:left-[37%]
 
@@ -58,7 +55,6 @@ export default function Home() {
           about us
         </button>
 
-        {/* Instagram */}
         <button
           onClick={() => window.open("https://instagram.com", "_blank")}
           className="
@@ -77,7 +73,6 @@ export default function Home() {
           instagram
         </button>
 
-        {/* TikTok */}
         <button
           onClick={() => window.open("https://tiktok.com", "_blank")}
           className="
@@ -96,7 +91,6 @@ export default function Home() {
           tiktok
         </button>
 
-        {/* Articles */}
         <button
           onClick={() => navigate("/articles")}
           className="
