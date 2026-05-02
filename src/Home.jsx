@@ -1,5 +1,6 @@
 import sewerMap from "./assets/images/subway.png";
 import { useNavigate } from "react-router-dom";
+import logo from "./assets/images/logo.png";
 
 export default function Home() {
   const navigate = useNavigate();
@@ -7,9 +8,15 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
       
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-title mb-6 !text-black">
-        throwup media
-      </h1>
+      <div className="flex items-center gap-0 mb-6">
+        <img
+          src={logo}
+          alt="Logo"
+          className="rotate-[20deg] w-32 sm:w-36 md:w-40 lg:w-44 h-auto"
+        />
+
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-title !text-black">throwup media</h1>
+      </div>
 
       <div className="relative flex justify-center items-center w-full">
         
@@ -56,7 +63,7 @@ export default function Home() {
         </button>
 
         <button
-          onClick={() => window.open("https://instagram.com", "_blank")}
+          onClick={() => window.open("https://www.instagram.com/throwupmm")}
           className="
             absolute 
             top-[30.5%] left-[47%]
@@ -74,7 +81,7 @@ export default function Home() {
         </button>
 
         <button
-          onClick={() => window.open("https://tiktok.com", "_blank")}
+          onClick={() => window.open("https://www.tiktok.com/@throwupmedia2")}
           className="
             absolute 
             top-[37%] left-[63%]
