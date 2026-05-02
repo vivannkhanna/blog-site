@@ -25,7 +25,7 @@ export default function Home() {
           onClick={() => navigate("/interviews")}
           className="
             absolute 
-            top-[30%] left-[12%] 
+            top-[30%] left-[12.5%] 
             sm:top-[32%] sm:left-[13%]
             lg:top-[34%] lg:left-[14%]
 
@@ -44,7 +44,7 @@ export default function Home() {
           onClick={() => navigate("/about")}
           className="
             absolute 
-            top-[33%] left-[34%]
+            top-[33%] left-[34.5%]
             sm:top-[35%] sm:left-[35%]
             lg:top-[37%] lg:left-[37%]
 
@@ -63,7 +63,7 @@ export default function Home() {
           onClick={() => window.open("https://instagram.com", "_blank")}
           className="
             absolute 
-            top-[30.5%] left-[46%]
+            top-[30.5%] left-[46.5%]
             sm:top-[33%] sm:left-[47%]
             lg:top-[34.5%] lg:left-[48.5%]
 
@@ -101,7 +101,7 @@ export default function Home() {
           onClick={() => navigate("/articles")}
           className="
             absolute 
-            top-[29.5%] left-[81%]
+            top-[30%] left-[81%]
             sm:top-[31%] sm:left-[80%]
             lg:top-[33.25%] lg:left-[83%]
 
