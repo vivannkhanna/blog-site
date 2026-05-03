@@ -1,13 +1,13 @@
 import sewerMap from "./assets/images/subway.png";
 import { useNavigate } from "react-router-dom";
 import logo from "./assets/images/logo.png";
+import { Analytics } from "@vercel/analytics/react";
 
 export default function Home() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      
       <div className="flex items-center gap-0 mb-6">
         <img
           src={logo}
@@ -116,6 +116,7 @@ export default function Home() {
         </button>
 
       </div>
+      <Analytics />
     </div>
   );
 }
