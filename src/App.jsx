@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import Home from "./Home";
 import kimjImg from "./assets/images/kimj.jpg";
 import kuruImg from "./assets/images/kuru.png";
@@ -6,34 +7,18 @@ import effieImg from "./assets/images/effie.jpg";
 import mgnaImg from "./assets/images/mgna.jpeg";
 import jackzebraImg from "./assets/images/jackzebra.jpg";
 import billionImg from "./assets/images/billionhappy.jpg";
+import sign1 from "./assets/images/sign1.png";
 
-function Interviews() {
-  return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-black">No interviews yet, stay tuned...</h1>
-    </div>
-  );
-}
+const articles = [
+  {
+    id: "asian-american-recognition",
+    title: "Asian American Recognition in Underground Music",
+    author: "Lloyd",
+    date: "May 2, 2026",
+    thumbnail: sign1,
 
-function About() {
-  return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-black">Page under construction...</h1>
-    </div>
-  );
-}
-
-function Articles() {
-  return (
-    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
-      
-      <div className="max-w-3xl w-full text-left">
-        
-        <h1 className="text-5xl font-bold mb-8 text-black">
-          Asian American Recognition in Underground Music
-        </h1>
-        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">By Lloyd (May 2nd, 2026)</h2>
-
+    content: (
+      <>
         <p className="mb-6 text-lg text-black">
         Since May is Asian American and Pacific Islander Heritage Month, I wanted to share with you guys some important people in the underground scene who identify as API.
         </p>
@@ -100,6 +85,87 @@ function Articles() {
         <p className="mt-10 text-black">
           I hope you explore these artists and discover something new. Happy API Heritage Month!
         </p>
+      </>
+    ),
+  },
+];
+
+function Interviews() {
+  return (
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold text-black">No interviews yet, stay tuned...</h1>
+    </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
+      <h1 className="text-3xl font-bold text-black">Page under construction...</h1>
+    </div>
+  );
+}
+
+function Articles() {
+  const navigate = useNavigate();
+
+  return (
+    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
+      <div className="max-w-5xl w-full">
+        <div className="flex flex-col gap-6">
+
+          {articles.map((article) => (
+            <div
+              key={article.id}
+              onClick={() => navigate(`/articles/${article.id}`)}
+              className="cursor-pointer group"
+            >
+
+              <img
+                src={article.thumbnail}
+                alt={article.title}
+                className="w-full h-auto object-contain rounded-xl shadow-md group-hover:scale-[1.02] transition-transform duration-200"
+              />
+
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+    </div>
+  );
+}
+
+function ArticlePage() {
+  const {id} = useParams();
+
+  let article = null;
+
+  for (let i = 0; i < articles.length; i++) {
+    if (articles[i].id === id) {
+      article = articles[i];
+      break;
+    }
+  }
+
+  if (!article) {
+    return <div className="text-center mt-10">Article not found</div>;
+  }
+
+  return (
+    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
+      <div className="max-w-3xl w-full">
+
+        <h1 className="text-5xl font-bold mb-4 text-black">
+          {article.title}
+        </h1>
+
+        <h2 className="text-xl mb-8 text-gray-600">
+          By {article.author} ({article.date})
+        </h2>
+
+        {article.content}
 
       </div>
     </div>
@@ -113,6 +179,7 @@ export default function App() {
       <Route path="/interviews" element={<Interviews />} />
       <Route path="/about" element={<About />} />
       <Route path="/articles" element={<Articles />} />
+      <Route path="/articles/:id" element={<ArticlePage />} />
     </Routes>
   );
 }
