@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import Home from "./Home";
 import kimjImg from "./assets/images/kimj.jpg";
 import kuruImg from "./assets/images/kuru.png";
@@ -7,9 +7,86 @@ import effieImg from "./assets/images/effie.jpg";
 import mgnaImg from "./assets/images/mgna.jpeg";
 import jackzebraImg from "./assets/images/jackzebra.jpg";
 import billionImg from "./assets/images/billionhappy.jpg";
+import ss1 from "./assets/images/ss1.png";
+import ss2 from "./assets/images/ss2.png";
+import ss3 from "./assets/images/ss3.png";
+import skai1 from "./assets/images/skai1.mov";
+import skai2 from "./assets/images/skai2.mov";
+import skai3 from "./assets/images/skai3.mov";
 import sign1 from "./assets/images/sign1.png";
+import sign2 from "./assets/images/sign2.png";
+import { useEffect } from "react";
+
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
 
 const articles = [
+  {
+    id: "kuru-skaiwater-beef",
+    title: "Kuru and Skaiwater Beef",
+    author: "Lloyd",
+    date: "May 5, 2026",
+    thumbnail: sign2,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        Just over a day ago, Jane Remover dissed streamer Dabo in a new song on Soundcloud. Skaiwater did not seem to like this, saying how Jane Remover is racist.
+        </p>
+
+        <div className="flex gap-4 mb-4">
+          <img
+            src={ss1}
+            className="w-1/2 h-auto object-contain rounded-xl"
+          />
+          <img
+            src={ss3}
+            className="w-1/2 h-auto object-contain rounded-xl"
+          />
+        </div>
+        <video
+          src={skai1}
+          controls
+          className="w-full max-w-sm mx-auto rounded-xl mb-6"
+        ></video>
+        <p className="mb-4 text-black">
+        This really came out of nowhere as Skaiwater really has no association with Dabo. They did do a stream together 2 months ago, but so did Jane’s friends Lucy Bedroque, slayr, Egobreak, etc. I believe that this anger is just bubbling over from the Cortis beef. If you guys don’t know, Jane Remover dissed Cortits (Kpop band) a few weeks ago on an instagram story and Skaiwater is a close affiliate with Cortis even producing their new song REDRED. As Jane Remover and Skaiwater were exchanging words on Instagram, Skaiwater shot a stray at kuru on an Instagram story. This really came out of nowhere and even surprised kuru. He is a close associate with Jane, but he denounces her actions. Kuru went on Instagram live expressing his confusion. 
+        </p>
+        <video
+          src={skai2}
+          controls
+          className="w-full max-w-sm mx-auto rounded-xl mb-6"
+        ></video>
+        <p className="mb-4 text-black">
+        Then, a video came out with skaiwater arguing with kuru over the phone.
+        </p>
+        
+        <video
+          src={skai3}
+          controls
+          className="w-full max-w-sm mx-auto rounded-xl mb-6"
+        ></video>
+        
+        <p className="mb-6 text-black">A screenshot of a DM was posted by skaiwater but quickly deleted.</p>
+        <img
+          src={ss2}
+          className="w-1/2 h-auto object-contain rounded-xl mx-auto mb-4"
+        />
+
+        <p className="mb-4 text-black">
+        This situation seems to be growing as rapper Dragnutz has posted on instagram calling out skaiwater as well. This beef is very new and not everything has developed yet but so far this is the news we have. Kuru and Lucy Bedroque have a show tonight in Brooklyn so we might see them talk more about it there tonight. Videos and photos above. All video credits to kuru, skaiwater, and Kurrco.
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "asian-american-recognition",
     title: "Asian American Recognition in Underground Music",
@@ -174,12 +251,16 @@ function ArticlePage() {
 
 export default function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/interviews" element={<Interviews />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/articles" element={<Articles />} />
-      <Route path="/articles/:id" element={<ArticlePage />} />
-    </Routes>
+    <>
+      <ScrollToTop />
+      
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/interviews" element={<Interviews />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/articles" element={<Articles />} />
+        <Route path="/articles/:id" element={<ArticlePage />} />
+      </Routes>
+    </>
   );
 }
