@@ -285,7 +285,7 @@ function ArticlePage() {
     <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
       <div className="max-w-3xl w-full">
 
-        <h1 className="text-5xl font-bold mb-4 text-black">
+        <h1 className="text-4xl font-bold mb-4 text-black">
           {article.title}
         </h1>
 
