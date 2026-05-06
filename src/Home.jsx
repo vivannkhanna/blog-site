@@ -39,6 +39,8 @@ export default function Home() {
             font-bold text-black
 
             bg-transparent border-none px-2 py-1 cursor-pointer
+
+            transform transition-transform duration-200 hover:scale-110 hover:text-gray-600
           "
         >
           interviews
@@ -57,6 +59,8 @@ export default function Home() {
             font-bold text-black
 
             bg-transparent border-none px-2 py-1 cursor-pointer
+
+            transform transition-transform duration-200 hover:scale-110 hover:text-gray-600
           "
         >
           about us
@@ -75,6 +79,8 @@ export default function Home() {
             font-bold text-black
 
             bg-transparent border-none px-2 py-1 cursor-pointer
+
+            transform transition-transform duration-200 hover:scale-110 hover:text-gray-600
           "
         >
           instagram
@@ -93,6 +99,8 @@ export default function Home() {
             font-bold text-black
 
             bg-transparent border-none px-2 py-1 cursor-pointer
+
+            transform transition-transform duration-200 hover:scale-110 hover:text-gray-600
           "
         >
           tiktok
@@ -110,6 +118,8 @@ export default function Home() {
             font-bold text-black
 
             bg-transparent border-none px-2 py-1 cursor-pointer
+
+            transform transition-transform duration-200 hover:scale-110 hover:text-gray-600
           "
         >
           articles

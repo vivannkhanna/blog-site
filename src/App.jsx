@@ -7,6 +7,9 @@ import effieImg from "./assets/images/effie.jpg";
 import mgnaImg from "./assets/images/mgna.jpeg";
 import jackzebraImg from "./assets/images/jackzebra.jpg";
 import billionImg from "./assets/images/billionhappy.jpg";
+import ahksosa from "./assets/images/ahksosa.png";
+import lazydoll from "./assets/images/lazydoll.png";
+import aidn from "./assets/images/aidn.png";
 import ss1 from "./assets/images/ss1.png";
 import ss2 from "./assets/images/ss2.png";
 import ss3 from "./assets/images/ss3.png";
@@ -15,6 +18,7 @@ import skai2 from "./assets/images/skai2.mov";
 import skai3 from "./assets/images/skai3.mov";
 import sign1 from "./assets/images/sign1.png";
 import sign2 from "./assets/images/sign2.png";
+import sign3 from "./assets/images/sign3.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -28,6 +32,53 @@ function ScrollToTop() {
 }
 
 const articles = [
+  {
+    id: "innovative-underground-artists",
+    title: "Innovative Underrepresented Artists",
+    author: "Vivann",
+    date: "May 6, 2026",
+    thumbnail: sign3,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        The idea for this article came from relistening to Still Slime a few days ago, the now deleted producer tape by boolymon featuring Osamason (R.I.P.). I remembered when I first listened to boolymon’s solo songs, and I loved how novel of a take they were on underground rap at the time. Appreciating artists that don’t get love from the mainstream yet is one of my favorite things about the underground, because it feels like you can see the appeal of art that the industry didn’t get to see yet. Here are three that speak out to me right now.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Ahksosa</h2>
+        <img src={ahksosa} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        Probably the most criminally underrated artist I’ve come across in a while, he has been making a wide range of music since 2021. According to CashCowMusic, he actually used to model before becoming a music artist, meaning he already had an established image on social media before starting his music journey. Songs like Insta Digis show him able to raise the energy in his songs with loud horns and synths in the background, while songs like Skater P show his skill to use different voices and make the song his, even with a simplistic instrumental. I think the most groundbreaking thing about him is that he isn’t afraid to include many different voices or sounds in his projects; he is clearly proficient in his many styles, and he is someone everyone should check out.
+        </p>
+        <p className="mb-6 text-black">
+          <b>Song Recs:</b> Insta Digis, Caution, Skater P
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">lazydoll</h2>
+        <img src={lazydoll} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        The only way I could describe lazydoll is if you fused boolymon, xaviersobased, and Lil Shine together, and that honestly doesn’t really describe all of his music still. His album music for ecology shows his love for in-your-face vocals and instrumentals. Particularly, his take on the jerk sound with songs like groOoOoOow and trauma is one of my favorites. His new album absence is such an amazing 25-minute listen, with cloud-y synths and hard-hitting drums that I really haven’t found replicated anywhere else. It is hard to pick favorites from this album, but some that I love are the relaxed flow of thoughts, the fun rhythms of straycat, and the great opener anesthesia. He is definitely someone who deserves your attention, any one of his albums or the song recs below are an amazing place to start.
+        </p>
+        <p className="mb-6 text-black">
+          <b>Song Recs:</b> crows, groOoOoOow, hitori
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">aidn.</h2>
+        <img src={aidn} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        Okay, he’s a little more popular than the other two, but I need a good enough excuse to talk about his music. His production is defined by EDM, with heavy bass hits on every quarter note and sharp synths, giving all of his music a layered, diverse soundscape. I think where he really shines is in his vocal contributions, using a staccato delivery to complement the beat. At times, it feels like he is part of the beat, especially in songs like déjà vu, and it gives much of his music a unique feel. I think more artists of this genre should try to draw inspiration from him in this regard; his voice literally sounds like a synth in half of his songs. I think in a couple of years, especially with his new songs like harajukugirl getting better and better, he will be someone talked about everywhere. You should definitely hop on the train early.
+        </p>
+        <p className="mb-6 text-black">
+          <b>Song Recs:</b> déjà vu, harajukugirl, dancewithme
+        </p>
+
+        <p className="mt-10 text-black">
+          Thank you so much for sticking around until the end. Be sure to check some of these people out!
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "kuru-skaiwater-beef",
     title: "Kuru and Skaiwater Beef",
