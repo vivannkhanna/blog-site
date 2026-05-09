@@ -10,6 +10,9 @@ import billionImg from "./assets/images/billionhappy.jpg";
 import ahksosa from "./assets/images/ahksosa.png";
 import lazydoll from "./assets/images/lazydoll.png";
 import aidn from "./assets/images/aidn.png";
+import mexiko from "./assets/images/mexiko.jpeg";
+import slayworld from "./assets/images/slayworld.jpg";
+import shine from "./assets/images/shine.jpg";
 import ss1 from "./assets/images/ss1.png";
 import ss2 from "./assets/images/ss2.png";
 import ss3 from "./assets/images/ss3.png";
@@ -19,6 +22,7 @@ import skai3 from "./assets/images/skai3.mov";
 import sign1 from "./assets/images/sign1.png";
 import sign2 from "./assets/images/sign2.png";
 import sign3 from "./assets/images/sign3.png";
+import sign4 from "./assets/images/sign4.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -32,6 +36,47 @@ function ScrollToTop() {
 }
 
 const articles = [
+  {
+    id: "history-of-pluggnb",
+    title: "A History of Pluggnb",
+    author: "Vivann",
+    date: "May 8, 2026",
+    thumbnail: sign4,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        A re-listen to What We Have, the album by acclaimed artist Summrs, had me thinking about the genre it belongs to as a whole: pluggnb. Dominated by loud, autotuned vocals and upbeat, soft beats, pluggnb is a genre I have loved for what seems like years. It is because of this deep liking I have for these albums and artists that I wanted to revisit the complete history of pluggnb, and maybe you could be convinced to take a look and see what you think.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Early Beginnings</h2>
+        <img src={mexiko} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        You may have heard of the genres dark plugg or dream plugg, and think that they have some relation to pluggnb. That is actually correct; they all stem from a precursor genre that is still being made today called plugg. The name plugg comes from the 2013 collective of rappers and producers called BeatPluggz, some of the more popular producers and artists from that era being MexikoDro and Corey Lingo. They and the whole collective showed signs of what was to come with pluggnb, using largely melodic vocal styles with “sparkly” instrumentals in the background. Playboi Carti was another artist who pioneered the melodic side of plugg with his self-titled album four years after BeatPluggz. Pluggnb wouldn't be a thing if it weren’t for this collective, and after that, we started to see pluggnb truly take shape.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">The Golden Age</h2>
+        <img src={slayworld} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        XanGang is a producer that is considered to be the pioneer of pluggnb. He was closely associated with artists Summrs, Kankan, Weiland, and Autumn, all part of the label/collective Slayworld, which was officially formed in 2016. When I think of this time in music, especially the history of pluggnb, I think of the Revived EP by Summrs, a project featuring many producers such as Xangang and Goyxrd. This project was instrumental in creating many trends closely associated with pluggnb, such as sustained guitar melodies and the heavy use of sound effects that would become commonplace over time. Nina! by Autumn was also a song that shows the state of pluggnb at the time and the innovation happening in the scene. This song in particular is where I believe loud synth melodies started becoming even more popular in this space. With projects like Nothing More Nothing Less by Summrs, pluggnb maintained its spot in the scene for a while, but with the split of Slayworld in 2021 the genre started to stagnate a little more.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Current State of Pluggnb</h2>
+        <img src={shine} className="w-full h-64 object-cover rounded-xl mb-4" />
+        <p className="mb-4 text-black">
+        With the popularity of the rage sound in today’s underground music landscape, pluggnb has sadly largely fallen to the wayside in terms of involvement today. However, there are still some contemporaries that keep evolving pluggnb even past its prime. Summrs continued to make pluggnb projects like What We Didn’t Have and B4DARAVEN, with a song like Top Off/House Arrest on the former being a prime example of pluggnb at its core. Lil Shine and Corey Lingo (yes, the one that was a part of BeatPluggz, he rarely gets his flowers for this) are probably my two favorites apart from Summrs that still make pluggnb to this day. Specifically Lil Shine’s albums Losing Myself and Lovesick showed me just how much pluggnb could still evolve when I first listened to them. Songs like Mistakes or Stars are quintessential examples of the vocal abilities of pluggnb artists, and his continued contributions to the genre are still making waves in the scene.
+        </p>
+
+        <p className="mt-10 text-black">
+        Thank you so much for reading, below are some song recommendations for anyone wanting to get into pluggnb. Check these out if you’re interested!
+        </p>
+        <p className="mt-10 text-black">
+        Z06 - Summrs, Bloods Always Thicker - Summrs, da boss - Summrs, Nun To Me 2 - Kankan, Nina! - Autumn!, Still the Same - Autumn!, Loser - Lil Shine, Stars - Lil Shine, Choose Up (feat. Corey Lingo) - Lil Shine, Mistakes - Lil Shine
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "innovative-underground-artists",
     title: "Innovative Underrepresented Artists",
