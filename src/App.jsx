@@ -13,6 +13,8 @@ import aidn from "./assets/images/aidn.png";
 import mexiko from "./assets/images/mexiko.jpeg";
 import slayworld from "./assets/images/slayworld.jpg";
 import shine from "./assets/images/shine.jpg";
+import lloydImg from "./assets/images/lloyd.png";
+import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
 import ss2 from "./assets/images/ss2.png";
 import ss3 from "./assets/images/ss3.png";
@@ -264,17 +266,134 @@ const articles = [
 ];
 
 function Interviews() {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-black">No interviews yet, stay tuned...</h1>
+    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
+      <div className="max-w-3xl w-full">
+
+        <button
+          onClick={() => navigate("/")}
+          className="mb-6 px-4 py-2 border border-black rounded-lg text-black hover:bg-black hover:text-white transition"
+        >
+          ← Back
+        </button>
+
+        <div className="flex flex-col items-center justify-center mt-20">
+          <h1 className="text-3xl font-bold text-black">
+            No interviews yet, stay tuned...
+          </h1>
+        </div>
+
+      </div>
     </div>
   );
 }
 
 function About() {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold text-black">Page under construction...</h1>
+    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
+      <div className="max-w-6xl w-full flex flex-col gap-20">
+
+        <div>
+          <button
+            onClick={() => navigate("/")}
+            className="mb-6 px-4 py-2 border border-black rounded-lg text-black hover:bg-black hover:text-white transition"
+          >
+            ← Back
+          </button>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+
+          <div className="flex flex-col gap-4 w-full md:w-1/3">
+            <img
+              src={lloydImg}
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </div>
+
+          <div className="w-full md:w-2/3 text-black">
+
+            <h1 className="text-5xl font-bold mb-2 text-black">Lloyd</h1>
+
+            <h2 className="text-2xl mb-6 text-black">
+              Creative Direction/Writer/Social Media
+            </h2>
+
+            <p className="mb-4">
+              Hi my name is Lloyd! I am 18 years old and I am a Korean born and raised in Shanghai. I currently live in NJ. My history with music dates back to all the way to 2nd grade where I remember this Russell Westbrook Shoe commercial with “Do What I Want” by Lil Uzi Vert playing in the background. I found the song and dove right into his discography and I fell in love. I had never heard music so good in my life before and I just kept expanding my taste to Carti, Chief Keef, Future, Gucci Mane, Lil B, and so much more. I loved this trap-esque sound back in the day. I kept listening to the same music until quarantine came around and I was so bored I really started to expand my taste. I was online a lot so of course I found Bladee, Ecco2k, the rest of Drain Gang, quinn, blackwinterwells, d0llywood, NOVAGANG, and just everyone in that space. I also started listening to underground rap as well with KA$HDAMI, Summrs, Autumn, Kankan, Izaya Tiji, SSG Kobe, tana, and so much more. Ever since then, I’ve been working on music and trying to better myself. I am currently in a band with my friend called marcy2008 and I do the vocals for it. We make electronic/hyperpop music that you definitely should check out. My current favorite types/genres of music are vkei, electronic, vocaloid, rap, shoegaze, experimental pop and many other smaller genres. Hope you guys enjoy my articles!
+            </p>
+
+            <h3 className="text-3xl font-bold mt-10 mb-4">
+              Favorite albums
+            </h3>
+
+            <ul className="list-disc ml-6 space-y-2">
+              <li>All Kero Kero Bonito albums</li>
+              <li>The Snow Strippers - Snow Strippers</li>
+              <li>E - Ecco2k</li>
+              <li>Crest - Ecco2k & Bladee</li>
+              <li>Self Titled - Crystal Castles</li>
+              <li>All Boolymon Producer tapes</li>
+              <li>Sayso Says - Che</li>
+              <li>Single Collection - Plastic Tree</li>
+              <li>No More Heros Vol 1. - Hi-C</li>
+              <li>&lt;/3 - Destroy Lonely</li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div className="flex flex-col md:flex-row gap-8 items-start">
+
+          <div className="flex flex-col gap-4 w-full md:w-1/3">
+            <img
+              src={vivannImg}
+              className="w-full h-auto object-contain rounded-xl"
+            />
+          </div>
+
+          <div className="w-full md:w-2/3 text-black">
+
+            <h1 className="text-5xl font-bold mb-2 text-black">Vivann</h1>
+
+            <h2 className="text-2xl mb-6 text-black">
+              Website Builder/Writer/Tech
+            </h2>
+
+            <p className="mb-4">
+              Hi, my name is Vivann and I’m 18 years old. I started listening to underground music around 2020 and 2021, with Yeat being my favorite during that time (his old stuff is still up there). I started listening to Che around that time too, with closed captions striking out to me specifically because of how new Che’s sound was at the time. Another artist that I found was Summrs and Lil Shine, basically at the same time. I don’t think I was really ready for pluggnb before that, but it quickly became one of my favorite genres ever (I still listen to Losing Myself basically every day). Moving closer to 2024, prettifun was one of my favorite finds of the year (I love upbeat underground rap, closed captions style stuff). I also started listening to a lot of Hi-C and Charli xcx because their harsh instrumentals and vocals really spoke to me. Artists like Boolymon and Okaymar also were staples of this place in my life, and there are so many more that I am neglecting to mention.
+            </p>
+
+            <p className="mb-4">
+              I think what drew me to this space within music culture is all of the branding and emphasis on image, each artist had their own identity and expression and this contributed so much to the memorability of the scene. I loved coding this website over the past few weeks, and I think it’s because with this website me and Lloyd could create an image for ourselves, and report on the culture that has been a part of our lives for so long.
+            </p>
+
+            <h3 className="text-3xl font-bold mt-10 mb-4">
+              Favorite albums
+            </h3>
+
+            <ul className="list-disc ml-6 space-y-2">
+              <li>What we have - Summrs</li>
+              <li>Losing Myself - Lil Shine</li>
+              <li>Pretti - prettifun</li>
+              <li>Up 2 Më - Yeat</li>
+              <li>Skeletrix Language - Edward Skeletrix</li>
+              <li>Rest in Bass: Encore - Che</li>
+              <li>B4EM - Nine Vicious</li>
+              <li>How i’m feeling now - Charli xcx</li>
+              <li>Eternal Atake - Lil Uzi Vert</li>
+              <li>Flex Musix - OsamaSon</li>
+              <li>So Much Fun - Young Thug</li>
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }
@@ -285,6 +404,14 @@ function Articles() {
   return (
     <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
       <div className="max-w-5xl w-full">
+
+        <button
+          onClick={() => navigate("/")}
+          className="mb-6 px-4 py-2 border border-black rounded-lg text-black hover:bg-black hover:text-white transition"
+        >
+          ← Back
+        </button>
+
         <div className="flex flex-col gap-6">
 
           {articles.map((article) => (
@@ -312,6 +439,7 @@ function Articles() {
 
 function ArticlePage() {
   const {id} = useParams();
+  const navigate = useNavigate();
 
   let article = null;
 
@@ -329,6 +457,13 @@ function ArticlePage() {
   return (
     <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
       <div className="max-w-3xl w-full">
+
+        <button
+          onClick={() => navigate("/articles")}
+          className="mb-6 px-4 py-2 border border-black rounded-lg text-black hover:bg-black hover:text-white transition"
+        >
+          ← Back
+        </button>
 
         <h1 className="text-4xl font-bold mb-4 text-black">
           {article.title}
