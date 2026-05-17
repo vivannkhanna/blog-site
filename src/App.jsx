@@ -13,6 +13,12 @@ import aidn from "./assets/images/aidn.png";
 import mexiko from "./assets/images/mexiko.jpeg";
 import slayworld from "./assets/images/slayworld.jpg";
 import shine from "./assets/images/shine.jpg";
+import amygdala from "./assets/images/amygdala.jpeg";
+import crest from "./assets/images/crest.png";
+import dandg from "./assets/images/dandg.jpeg";
+import e from "./assets/images/e.jpg";
+import pxe from "./assets/images/pxe.jpg";
+import trashisland from "./assets/images/trashisland.jpeg";
 import lloydImg from "./assets/images/lloyd.png";
 import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
@@ -25,6 +31,7 @@ import sign1 from "./assets/images/sign1.png";
 import sign2 from "./assets/images/sign2.png";
 import sign3 from "./assets/images/sign3.png";
 import sign4 from "./assets/images/sign4.png";
+import sign5 from "./assets/images/sign5.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -38,6 +45,131 @@ function ScrollToTop() {
 }
 
 const articles = [
+  {
+    id: "top-ecco2k",
+    title: "Top 12 Ecco2k Songs of All Time",
+    author: "Lloyd",
+    date: "May 17, 2026",
+    thumbnail: sign5,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        I am a huge fan of Ecco2k’s music and his other works as well. He is probably one of my top 5 favorite musicians of all time and in conversation for my favorite human of all time (lol). Ecco2k, real name Zak Arogundade, is a member of the renowned music collective Drain Gang. He is a model, artist, fashion designer, and just a very creative person. I’ve been listening to him for the past few years (since 2020) and followed his journey making music. Today I want to talk about my personal Top 12 Ecco2k songs. Here are the guidelines:
+        </p>
+
+        <ol className="list-decimal ml-6 space-y-2 text-black mb-8">
+          <li>No unreleased or songs not on streaming platforms because even though I know some of his unreleased catalog, I have never fully dove into that space. I also don't want people saying I missed a super niche unreleased song 5 people have heard. I don’t want to open that can of worms. So sorry, songs like Play Em Like Atari, guardianAngels, and HOLDMEDOWNLIKEGRAVITY will not be on this list even though they would’ve easily made my top 12.</li>
+          <li>Only songs that are on Ecco’s page will be on this. That means features won’t be here. I know that there are some songs that he is featured on that sound amazing, but that is just too many songs to take into account for this 12 song list. Songs from Drain Gang tapes will still be here.</li>
+          <li>Also if another artist is on the song, I will also be taking into account their verse. For example, if Bladee has a bad verse on a song but Ecco has a good verse I will judge the song on how good the song is as a whole, not just Ecco’s verse.</li>
+        </ol>
+
+        <p className="mb-6 text-lg text-black">
+        Here are some songs that were so close to making it on the list but there were just better songs :(. Everyone should still check these songs out. They are still amazing.
+        </p>
+
+        <ol className="list-decimal ml-6 space-y-2 text-black mb-8">
+          <li>1:1 - Ecco2k, Yung Lean, and Thaiboy Digital</li>
+          <li>Western Union - Ecco2k, Bladee, and Thaiboy Digital</li>
+          <li>Stalker - Ecco2k and Bladee</li>
+          <li>Victim - Eco2k, Bladee, and Thaiboy Digital</li>
+          <li>GT-R - Ecco2k</li>
+          <li>You lose - Ecco2k, Bladee, Thaiboy Digital</li>
+          <li>Nosebleed - Ecco2k and Thaiboy Digital</li>
+          <li>Calcium - Ecco2k</li>
+          <li>Sugar and Diesel - Ecco2k</li>
+          <li>Jalouse - Ecco2k</li>
+          <li>Black Boy - Ecco2k</li>
+          <li>White Meadow - Ecco2k and Bladee</li>
+          <li>Expression on your face - Ecco2k, Bladee, and Mechatok</li>
+        </ol>
+
+        <p className="mb-6 text-lg text-black">
+        Ok, let's get into it.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">12. AAA Powerline - Ecco2k</h2>
+        <img src={e} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        AAA Powerline is the opening song to Ecco2k’s personal project “E” released in 2019. This song is just flat out amazing. The song is produced by Shanti and vocals are by Ecco2k. This song’s dreamy synths mixed with the hard kicks of the drums is just superb. Ecco’s vocals also just add such a beautiful touch and almost makes this sound like meditation music you find on YouTube. The perfect association for this song would be a bubble bath after a hard day. It just makes you feel like you’re floating. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">11. Amygdala - Ecco2k & Bladee</h2>
+        <img src={amygdala} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Amygdala is a single released on January 19, 2022. The song is produced by Mechatok with vocals from Ecco2k and Bladee. This song was released just about 2 months before “Crest” (A collab album between Ecco and Bladee) was released. This song exhibits the strong chemistry they have together. Ecco and Bladee’s vocals just mesh so well on the single. Bladee’s relaxed vocals open up the song and then transitions to Ecco’s signature highpitched-energetic voice as the beat is about to drop. Amazing is the only word I can describe this song with. This electronic beat mixed with Ecco and Bladee’s vocals create this colorful-candyland-like feel for the song. Hearing this song you just want to dance and groove. Definitely check this song out. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">10. First Crush - Ecco2k, Bladee, & Yung Lean</h2>
+        <img src={dandg} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        First Crush is part of the Drain Gang project “D&G” released on August 7, 2017. This song features vocals from Ecco2k, Bladee and Yung Lean. It is also produced by the renowned producer, Whitearmor. For me, this is the most classic sounding “Drain Gang” song. The Whitearmor produced ambient-cloudy instrumental combined with the relaxed-highly-autotuned vocals of Bladee and Ecco’s almost omnipotent vocals. Yung Lean’s relaxed rapping also works so well here. The way Ecco’s introduced in this song is so clean. There’s no break. The transition from Bladee’s verse to Ecco’s is seamless and this little detail just adds so much to the song. This song is a must listen if you want to get into Drain Gang.
+        </p>
+        
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">9. Acid Rain - Ecco2k & Bladee</h2>
+        <img src={trashisland} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Acid Rain is part of the Drain Gang project named “Trash Island” released September 12, 2019. This song is produced by Mechatok and Whitearmor with vocals from Ecco2k and Bladee. This song’s instrumental is so colorful. The bouncy synths in the background with the bright keys bring this elated mood to this song that I absolutely love. Bladee’s signature relaxed voice shines in this song as it introduces this song perfectly. Then, Ecco’s bright, high, and passionate vocals come in for the hook. Then as the drop hits, Ecco’s voice changes to this extremely high shaky vocal that adds to the already chaotic drop. The drums on this drop increase in intensity from before and mixed with the vocals creates this organized chaos that I love. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">8. Happily Ever After - Ecco2k</h2>
+        <img src={dandg} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Happily Ever After is part of the Drain Gang tape “D&G”. This is a solo song by Ecco and it is produced by Whitearmor again. The instrumental of this song is so positive while feeling relaxing. It’s not doing too much but doing enough at the same time. This song showcases a more regular tone from Ecco and it just works so well. His voice just sounds like his regular self. This song just sounds like sitting inside of a forest and taking in the environment. This song is one of the most experimental Ecco songs and I would say it still works super well. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">7. Don’t Ask - Ecco2k</h2>
+        <img src={e} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Don’t Ask is a song off of Ecco’s solo project “E”. The song is produced by Whitearmor. This song, in my opinion, has one of the greatest soundscapes of all the songs I have ever heard. This song lacks drums so the focus is totally on Ecco’s voice and the instrumental. The xylophone-like keys, the slight bird chirps you can hear in the background, Ecco’s adlibs chanting in the background, and his high-pitched relaxed vocals with little energy makes this song sound like a futuristic tropical island. I don’t know how to explain it but the atmosphere is truly something I have never felt before. This addictive melody made by Whitearmor feels so refreshing and calming. I suggest every human being to experience this song once.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">6. Waterfall - Ecco2k, Bladee, & Thaiboy Digital</h2>
+        <img src={trashisland} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Waterfall is a song off of the Drain Gang album “Trash Island”. This song features vocal performances from Ecco2k, Bladee, and Thaiboy Digital. This song is also produced by Whitearmor. This song’s ambient feel truly makes you feel entranced. The mix of the calm vocals of all of Drain Gang adds this excited feeling to this ambient instrumental. I believe that this song is one of the special songs where every member has a 10/10 performance. Thaiboy’s relaxed hook perfectly mixes with the instrumental. Bladee’s vocals bring a bright feeling to this song and Ecco’s verse brings an amazing signature passionate feeling that is expected from him. If you really want a song that shows the upsides of all Drain Gang members, this is the perfect song for that. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">5. The Flag is Raised - Ecco2k & Bladee</h2>
+        <img src={crest} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        The Flag is Raised is a song from “Crest”, Ecco2k and Bladee’s collaboration album released on March 18, 2022. This song includes vocals from both of them and also, again, this song is produced by Whitearmor. I vividly remember the first time I listened to this song. Crest just dropped and I had no idea so I just sat down to listen to this album. This being the first song of the album, I just clicked on play without thinking too much. Once this song started playing, I knew this album would be one of my favorites of all time. Bladee’s energetic vocals surprisingly work so well on this song. Ecco’s vocals transcend this song into one of the greatest songs I have ever heard. The instrumental is also just so happy and jovial, it really just gives me hope for life. This song is a must listen if you really want to get into Drain Gang. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">4. Desire is a Trap - Ecco2k & Bladee</h2>
+        <img src={crest} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Desire is a Trap is a song from “Crest”. The song features vocals from Ecco and Bladee and, again, it is produced by Whitearmor. This song’s instrumental is nothing less than magical. The mosquito-like synth that opens the track feels so nostalgic for something I haven’t experienced yet. The track opens with Ecco’s verse. In my opinion, this is probably one of Ecco’s best verses he has ever done on any song. The way he flows on this magical instrumental feels like frolicing in an open field on a sunny day. It is nothing short of amazing. Then Bladee shows his angelic heavily auto-tuned vocals that shine through right after Ecco’s verse. This song really has a feeling of letting go and enjoying freedom. Nothing is holding you down, just keep going. I love when Drain Gang songs have this indescribable hopeful feeling. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">3. Faust - Ecco2k & Bladee</h2>
+        <img src={crest} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Faust is a song from “Crest”. The song features vocals from Ecco and Bladee and, again, it is produced by Whitearmor. The instrumental feels like what the gates of heaven would feel like. The reverbed keys with the dreamy synths in the background feel so heavenly. I don't know how else to describe this song but heaven. Ecco uses both his high voice and his normal voice in this song. The hook, where he uses his normal voice, is so addicting. It feels as if his voice is blending into the instrumental to create this ethereal feeling. Bladee also has an amazing performance in this song. His nonchalant autotuned voice shines through between Ecco’s verse as a more relaxed section of the song. Even though he has a smaller verse, it still displays his talent. I just cannot get enough of Ecco’s verse in this song. His flow and voice combined with this heavenly instrumental is so hard to top. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">2. In the Flesh - Ecco2k</h2>
+        <img src={pxe} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        In the Flesh is a song from Ecco2k’s solo EP “PXE” dropped on March 31, 2021 (My birthday!!). It is actually produced and sung by Ecco. The instrumental starts off with these super distorted synths then transforms to this fairy-dreamy instrumental. This is exactly how I think fairy dust would sound like. Ecco uses his high pitched voice again in this song which will always be a hit. The main interesting thing about this song is his lyrics. It is truly emotional. He wonders if this is all there is to life. He is confused and vulnerable: showing his true colors. He talks about love as well in this track. He wants someone but still questioning the bounds of life and if he can go beyond. He also talks about his other problems like people telling him to get help and how people won’t listen to him. A lot of the messaging is ambiguous, like most of his other songs, but the way he just spills his problems into this dreamy track will forever stick with me and it is definitely one of my favorite songs of all time. 
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">1. Security! - Ecco2k</h2>
+        <img src={e} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        Security! is a song off of Ecco’s solo project “E”. The song is produced by Mechatok and Gud. I don’t even know where to begin with this song. This is one of the only songs I will ever consider perfect. The instrumental is just superb. It doesn’t have any drums so you can really focus on this addicting digital melody. It also features some botanica (amazing genre you guys should check out) type production in some parts of the song that I just love. There is also this lead that gets introduced in the middle that makes this song just sound even more transcended. His voice in this song is a mix of his high pitched voice and his normal voice. I don’t really know how to 100 percent explain it. The energy is like his normal voice but it sounds like his high pitched voice, but I promise you, it is the best I have ever heard Ecco. The lyrics in this song are also nothing short of amazing. He talks about reaching perfection and changing himself to be who he wants to be. He mourns the fact that he’ll never reach the look that he wants and how even staring into the mirror is difficult. Ecco’s emotion shines through in these lyrics that I think about every time I listen to this song. The music video for this song is also so amazing. It shows him in a room with hanging lights and surrounded by mirrors, reflecting the lyrics of the song. The comment section of this Youtube video says some interesting things that I want to share with you guys. @VictorClvtt said “Listening to Ecco's music feels like drinking cold water through your ears, it's lovely”. @Frosty.Fingers said “This is exactly what McDonald’s sprite sounds like”. Finally, @filiphjelm4471 said “This sounds like Owl City’s Fireflies but with more ketamine and body dysmorphia”. I really want you guys to go listen to this song as it is definitely in my top 5 songs of all time. 
+        </p>
+
+        <p className="mt-10 text-black">
+        I hope you guys enjoyed this article! This full thing took me upwards of 25 hours so I really hope you guys take your time to read and dive into the amazing discography of Ecco2k. If he really isn’t your cup of tea I suggest you look into the other people in Drain Gang, but just please at least go listen to some new music because of this article. 
+        </p>
+        <p className="mt-10 text-black">
+        - Lloyd
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "history-of-pluggnb",
     title: "A History of Pluggnb",
