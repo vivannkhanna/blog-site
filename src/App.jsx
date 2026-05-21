@@ -36,6 +36,7 @@ import sign2 from "./assets/images/sign2.png";
 import sign3 from "./assets/images/sign3.png";
 import sign4 from "./assets/images/sign4.png";
 import sign5 from "./assets/images/sign5.png";
+import sign6 from "./assets/images/sign6.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -54,7 +55,7 @@ const articles = [
     title: "Lil Shine's Career in Retrospect",
     author: "Vivann",
     date: "May 21, 2026",
-    thumbnail: sign5,
+    thumbnail: sign6,
 
     content: (
       <>
