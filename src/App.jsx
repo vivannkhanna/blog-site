@@ -19,6 +19,10 @@ import dandg from "./assets/images/dandg.jpeg";
 import e from "./assets/images/e.jpg";
 import pxe from "./assets/images/pxe.jpg";
 import trashisland from "./assets/images/trashisland.jpeg";
+import heaven from "./assets/images/heaven.png";
+import losing from "./assets/images/losing.jpeg";
+import lovesick from "./assets/images/lovesick.png";
+import grds from "./assets/images/grds.png";
 import lloydImg from "./assets/images/lloyd.png";
 import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
@@ -45,6 +49,53 @@ function ScrollToTop() {
 }
 
 const articles = [
+  {
+    id: "lil-shine-career",
+    title: "Lil Shine's Career in Retrospect",
+    author: "Vivann",
+    date: "May 21, 2026",
+    thumbnail: sign5,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        Listening to Lil Shine’s new album Get Rich or Die Sippin’, coupled with his unfortunate sentencing and a necessary pause in his already illustrious career, got me thinking about what I specifically loved about his music. It also made me think of how long his art has been a staple in my life, from his earliest EP’s and albums that aren’t on streaming, to the logical evolution of all of his music in the form of his newest album. So, I think it’s fitting to go through all of his works in chronological order, and examine what made them so special and boundary-breaking at the time.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">First Beginnings</h2>
+        <img src={heaven} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        You might think, when first listening to his older works like Heavenly Ascension in 2021 and SH!NE in 2019, that he sounds like a 15-year-old kid who just got his hands on a microphone. You would be completely right: he started making music really early on in his life, and you can still hear that higher voice that allows him to hit vocal runs that would become a staple in his career to follow. Heavenly Ascension in particular stood out to me on my first listen on a now-deleted Spotify reupload, with songs like Pina Colada and Ball Out being some of my favorite introductions to Lil Shine’s style of pluggnb: high-pitched vocals and upbeat sharp-ish instrumentals. He also already had Autumn! as a featuring artist on his first EP, showing the connections that he made and continued to make within the growing pluggnb and underground rap circles.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Cementing his Spot</h2>
+        <img src={losing} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        If you were in the underground rap space in 2022, you listened to this album, and if you somehow haven’t, then you need to stop reading right now and go listen to it. This isn’t just a biased take because I love it so much, Losing Myself had such a universally wide reach and impact during the time because of its cohesive yet groundbreaking soundscape that Lil Shine managed to develop in his first studio album. The titular track sets the mood, with Lil Shine’s unique flows and XanGang’s production that reveals more layers and counter-melodies as you listen deeper (you’ll hear his name even more going forward). Songs like Stars show his lower register as well, showing that his music is varied and he doesn’t always go for his previously established sound every time. This album set a giant precedent for both his music and pluggnb as a whole, and he sought to match it with his next album.
+        </p>
+
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Following Up on Losing Myself</h2>
+        <img src={lovesick} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        In 2023, he released his second studio album Lovesick, going for a more laid back RnB-ish sound that was a breath of fresh air at the time. I remember first listening to Mistakes, and that piano line by Cloudbxy and the subsequent vocals came together to make one of my favorite pluggnb songs to this day. A lot of these songs sound so full and lively, kind of like trying to hear what someone is saying right next to you at a loud party. As a whole, this album feels like an evolution vocally of what he was developing in Losing Myself, and he was clearly zoning in on his artistic image with this album. After this he also released the Tearscape EP, having some of my favorite songs like Wake Up. This EP has a more wavey sound, kind of emulating his previous work, and it sounded so interesting when it came out.
+        </p>
+        
+        <h2 className="text-3xl font-bold mt-10 mb-2 text-black">Latest Stages</h2>
+        <img src={grds} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-4 text-black">
+        In my opinion, the start of his later era of music is 2025’s Shine Forever, which is, as a whole, a more reserved and low-energy project. You still occasionally hear songs that echo his older work, like one of my favorites Enticing, with loud synths and in-your-face singing. I also loved songs like Feel Me 2, which is one of his slower songs bpm-wise, but still maintains a high energy. Overall, he explored a lot of different sounds on this album, and I enjoyed it. However, I think we can all agree that his latest release, Get Rich and Die Sippin’, completely surpassed all expectations after Shine Forever, a good album in its own right. It almost seems like a goodbye gift to the fans, with songs like Like What? showing his skill when creating flows and songwriting. I remember listening to the beat switch in Red Dot featuring Kankan and freaking out when the Losing Myself style melody got undercut by hard percussion and bells, and it shows how open Shine is to experimenting with his sound and trying things he never has before. When the ending track started playing and I heard those whining synths in the background, I was reminded of Lovesick and of how important his music became for the genre as a whole. I recommend this album to everyone; it truly is a crazy experience.
+        </p>
+
+        <p className="mt-10 text-black">
+        I hope you guys enjoyed reading, I would definitely try out listening to some of his songs and seeing if it appeals to you!
+        </p>
+        <p className="mt-10 text-black">
+        - Vivann
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "top-ecco2k",
     title: "Top 12 Ecco2k Songs of All Time",
