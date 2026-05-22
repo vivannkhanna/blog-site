@@ -23,6 +23,8 @@ import heaven from "./assets/images/heaven.png";
 import losing from "./assets/images/losing.jpeg";
 import lovesick from "./assets/images/lovesick.png";
 import grds from "./assets/images/grds.png";
+import katmoji from "./assets/images/katmoji.jpeg";
+import katmoji2 from "./assets/images/katmoji2.jpg";
 import lloydImg from "./assets/images/lloyd.png";
 import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
@@ -37,6 +39,7 @@ import sign3 from "./assets/images/sign3.png";
 import sign4 from "./assets/images/sign4.png";
 import sign5 from "./assets/images/sign5.png";
 import sign6 from "./assets/images/sign6.png";
+import interview1 from "./assets/images/interview1.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -452,12 +455,96 @@ const articles = [
   },
 ];
 
+const interviews = [
+  {
+    id: "katmoji",
+    title: "The Katmoji Interview",
+    author: "Lloyd",
+    date: "May 22, 2026",
+    thumbnail: interview1,
+
+    content: (
+      <>
+        <div className="flex gap-4 mb-4">
+          <img
+            src={katmoji}
+            className="w-1/2 h-auto object-contain"
+          />
+          <img
+            src={katmoji2}
+            className="w-1/2 h-auto object-contain"
+          />
+        </div>
+        
+        <p className="mb-6 text-black">
+        Katmoji is a Japanese-American music artist born on February 9, 2004. Her music is extremely unique. The instrumentals she uses combine these addictive and hopeful guitar chords with underground rap-esque drums. Her voice is so soft-flowing on the instrumental it almost feels like flying with the Minecraft Elytra. Her music is totally amazing and something I haven’t seen yet. Katmoji has recently worked with producer Cranes and i.v to create, my favorite project of hers, Card Games. In my opinion, this project is a must listen to truly diversify your music taste. She recently received some traction from being a feature on kuru’s album “Backstage Hologram”, on the song ”Like glue”. She is quickly gaining a fanbase and we were interested to learn more about her and her music. This is the Katmoji Interview.
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What were some of your biggest inspirations when you started music and how did you start?
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Katmoji:</b> Definitely my partner, he is always making music & after watching over his shoulders for a bit I downloaded FL with his license and did it for fun. I actually started out making DnB and snailhouse-esque dance music! (some are still up on my soundcloud) Around the same time I would record on my phone using Bandlab when nobody was home. I made a bunch of questionable songs but he really believed in my vocals before anyone else, and convinced me to start posting my music!
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> Who are some of the most underrated artists/producers people have to tap in with?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Katmoji:</b> Everyone in Le Citadel, open mic night, i.v., flipphonecharm & Lihonabolote (they prod a bunch of my first songs!!), mati, massi, toxic, lsd, galloper, luvpurp, orchid, porkbelly, duatra, instagram filter, ig_user.... so many more
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What’s your favorite song you have ever made?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Katmoji:</b> Maybe "Melting Snow Cat"! I like the production I did on it alot, I just need to revisit the mixing before putting it out on streaming but it's still up on my soundcloud :)
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What are some of your top shows/books/anime/games/(something other than music) that inspires your music?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Katmoji:</b> It's hard to hone in on just a few things, but growing up I was super into everything Pokemon, Homestuck, read tons of manga laying around the house (Nodame Cantabile is probably one of the first I read because my mom had all the books!)
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What are some of your dream collabs?
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Katmoji:</b> I don't have anyone specific in mind but I've always wanted to sing in a band.. i would play the keytar 🎹 
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What do you have planned for the future and what will that music sound like?
+        </p>
+
+        <p className="mb-10 text-black">
+        <b>Katmoji:</b> I have tons of unreleased songs that I'm building EPs/albums for, I've been working with massi recently so hopefully I can have that one out soon!! Me and cranes are working on a dance album too as a side project!
+        </p>
+
+        <p className="text-black">
+        Thank you guys for reading to the very end!!! We really want to thank Katmoji for taking a chance on us and doing an interview with us. We really really really really really appreciate it!!! Now everyone go check out her music I promise it will be something you guys have never experienced before.
+        </p>
+        <p className="mt-10 text-black">
+        - Lloyd Jin
+        </p>
+      </>
+    ),
+  },
+];
+
 function Interviews() {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
-      <div className="max-w-3xl w-full">
+      <div className="max-w-5xl w-full">
 
         <button
           onClick={() => navigate("/")}
@@ -466,11 +553,68 @@ function Interviews() {
           ← Back
         </button>
 
-        <div className="flex flex-col items-center justify-center mt-20">
-          <h1 className="text-3xl font-bold text-black">
-            No interviews yet, stay tuned...
-          </h1>
+        <div className="flex flex-col gap-6">
+
+          {interviews.map((interview) => (
+            <div
+              key={interview.id}
+              onClick={() => navigate(`/interviews/${interview.id}`)}
+              className="cursor-pointer group"
+            >
+
+              <img
+                src={interview.thumbnail}
+                alt={interview.title}
+                className="w-full h-auto object-contain rounded-xl shadow-md group-hover:scale-[1.02] transition-transform duration-200"
+              />
+
+            </div>
+          ))}
+
         </div>
+
+      </div>
+    </div>
+  );
+}
+
+function InterviewPage() {
+  const {id} = useParams();
+  const navigate = useNavigate();
+
+  let interview = null;
+
+  for (let i = 0; i < interviews.length; i++) {
+    if (interviews[i].id === id) {
+      interview = interviews[i];
+      break;
+    }
+  }
+
+  if (!interview) {
+    return <div className="text-center mt-10">Interview not found</div>;
+  }
+
+  return (
+    <div className="min-h-screen bg-white px-6 py-12 flex justify-center">
+      <div className="max-w-3xl w-full">
+
+        <button
+          onClick={() => navigate("/interviews")}
+          className="mb-6 px-4 py-2 border border-black rounded-lg text-black hover:bg-black hover:text-white transition"
+        >
+          ← Back
+        </button>
+
+        <h1 className="text-4xl font-bold mb-4 text-black">
+          {interview.title}
+        </h1>
+
+        <h2 className="text-xl mb-8 text-gray-600">
+          By {interview.author} ({interview.date})
+        </h2>
+
+        {interview.content}
 
       </div>
     </div>
@@ -675,6 +819,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/interviews" element={<Interviews />} />
+        <Route path="/interviews/:id" element={<InterviewPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/articles" element={<Articles />} />
         <Route path="/articles/:id" element={<ArticlePage />} />
