@@ -25,6 +25,8 @@ import lovesick from "./assets/images/lovesick.png";
 import grds from "./assets/images/grds.png";
 import katmoji from "./assets/images/katmoji.jpeg";
 import katmoji2 from "./assets/images/katmoji2.jpg";
+import sheroy1 from "./assets/images/sheroy1.jpg";
+import sheroy2 from "./assets/images/sheroy2.jpg";
 import lloydImg from "./assets/images/lloyd.png";
 import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
@@ -40,6 +42,7 @@ import sign4 from "./assets/images/sign4.png";
 import sign5 from "./assets/images/sign5.png";
 import sign6 from "./assets/images/sign6.png";
 import interview1 from "./assets/images/interview1.png";
+import interview2 from "./assets/images/interview2.png";
 import { useEffect } from "react";
 
 function ScrollToTop() {
@@ -456,6 +459,95 @@ const articles = [
 ];
 
 const interviews = [
+  {
+    id: "sheroy",
+    title: "The Sheroy Interview",
+    author: "Lloyd",
+    date: "June 2, 2026",
+    thumbnail: interview2,
+
+    content: (
+      <>
+        <div className="flex gap-4 mb-4">
+          <img
+            src={sheroy1}
+            className="w-1/2 h-auto object-contain"
+          />
+          <img
+            src={sheroy2}
+            className="w-1/2 h-auto object-contain"
+          />
+        </div>
+        
+        <p className="mb-6 text-black">
+        Sheroy is a rapper based in New York City and one of the standout voices in the new wave of ambient rap. Alongside artists like kllhhr, suckrball, tazparis, and 22 Pooruhn, he's helping shape a new upcoming sound. What sets Sheroy apart is the uniqueness of his music. He frequently collaborates with producers such as popilization, violets, undrcvr, dollmaker, blxty, and kuru, whose inspirational piano melodies and hard-hitting, fast-paced drums create the perfect pairing to his vocals. Sheroy's vocal delivery is also interesting. His voice is calm, sometimes sounding as though he's struggling to get the words out. Rather than taking away from the music, that quality adds a layer of vulnerability; especially on the song “18”. In January 2026, Sheroy received a boost in exposure after being featured on the underground rap iceberg created by Trending Raps. Although he appeared near the bottom of the chart, the placement sparked curiosity among viewers and introduced many new listeners to his music. As Sheroy's audience continues to grow, we wanted to learn more about both the artist and the person behind the music. This is the Sheroy Interview.
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What were your biggest inspirations when you started music and how did you start?
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Sheroy:</b> It's hard to name inspirations with music too much shit has made me wanna make more or create a sound but mostly tlop by kanye watch my back by lucki and alot of charli xcx. Being in a bnb with suckrball kllhhr n 22, made me start rapping. They started everything for me then violet really made me realize i can make something cool in this i owe everything to them.
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> Who are some of the most underrated artists/producers people have to tap in with?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Sheroy:</b> 01margiela cm num and canalstreet they all have been making really great shit and not enough people really talk about them but i know they flowers gon come soon.
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> How was it performing in Japan and what was your experience there?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Sheroy:</b> Performing in japan was mad cool really random but turnt i was hella nervous on stage with a deadass vape tryna pull a cece natalie but it was hella fun i fw tokyo alot kinda fried but a fun ass place.
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What was your reaction when you saw yourself at the bottom of the underground rap iceberg?
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Sheroy:</b> it was funny to me i didnt really think much of it but then seeing 42ceo call me a nobody and people i went to middle school mention seeing my name was mad funny
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What are some of your dream collabs?
+        </p>
+        
+        <p className="mb-4 text-black">
+        <b>Sheroy:</b> sky ferreira, kanye, lorde, bladee or probably drake so i could get him to rap like an incel again
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> When you made your song 18, how did you get yourself into such an emotional state?
+        </p>
+
+        <p className="mb-10 text-black">
+        <b>Sheroy:</b> i made 18 6 am in bed like the day after my birthday n just spoke about how i felt in that moment that song is still really special to me and i dont know if i could ever recreate something like that
+        </p>
+
+        <p className="mb-4 text-black">
+        <b>Lloyd:</b> What do you have planned in the future and how will that music sound?
+        </p>
+
+        <p className="mb-10 text-black">
+        <b>Sheroy:</b> im planning out a tape rn ive been getting the feel of how it sounds im really excited to work on that i really wanna create a sound thats kinda nostalgic and u just sit and think about what just went thru ur brain
+        </p>
+
+        <p className="text-black">
+        Thank you for staying till the end and we really want to thank Sheroy for doing this interview with us and helping us learn more about his music! Go check his music out!!
+        </p>
+        <p className="mt-10 text-black">
+        - Lloyd Jin
+        </p>
+      </>
+    ),
+  },
   {
     id: "katmoji",
     title: "The Katmoji Interview",
