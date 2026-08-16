@@ -32,6 +32,9 @@ import vivannImg from "./assets/images/vivann.png";
 import ss1 from "./assets/images/ss1.png";
 import ss2 from "./assets/images/ss2.png";
 import ss3 from "./assets/images/ss3.png";
+import pz1 from "./assets/images/pz1.jpg";
+import pz2 from "./assets/images/pz2.jpeg";
+import pz3 from "./assets/images/pz3.jpeg";
 import skai1 from "./assets/images/skai1.mov";
 import skai2 from "./assets/images/skai2.mov";
 import skai3 from "./assets/images/skai3.mov";
@@ -56,6 +59,44 @@ function ScrollToTop() {
 }
 
 const articles = [
+  {
+    id: "pz-career",
+    title: "How Pz' Combines Fashion and Music",
+    author: "Vivann",
+    date: "August 16, 2026",
+    thumbnail: sign6,
+
+    content: (
+      <>
+        <p className="mb-6 text-lg text-black">
+        First of all, so sorry for the wait! I won’t go into the reasons why here, but I’m glad that I finally get the opportunity to write here again. Today’s topic is Pz’, or p3ezy, or pz*, or whatever he goes by at the moment. For my first day back to writing, I picked a really tough one, and that is because to truly see how Pz is changing the scene and captivating so many minds, you must examine his life before making music. This is because Pz was, and still is, active in the modeling and fashion communities before becoming an artist. You often find aspects of both of these different lifestyles and interests intertwined and present in each other, and I think that is part of what makes Pz unique.
+        </p>
+
+        <img src={pz1} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-6 text-lg text-black">
+        I think the best place to start is where I personally found Pz, and that is roughly three years ago on Instagram. I’m not going to lie, I only really followed him for his fit pics, and all I remember from that time was my friend Lloyd telling me how his other friend met him in a 2nd Street store. That might all be wrong, the memory is still hazy, but he clearly had a very distinct style that made me and many other followers interested in what he was doing. Around this time, he began his career as a model after signing to Wilhelmina Models, and he also started making music as a hobby after befriending an artist known as Tezzus.
+        </p>
+
+        <img src={pz2} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-6 text-lg text-black">
+        He would continue to model and further share his personal sense of style with the world, something that would only become more prominent with his venture into walking the runway. Enter London Fashion Week: if you remembered anyone from the Mowalola Ogunlesi Spring/Summer 2025 collection, it would be him. This was his most far-reaching role up until this point, with the collection really showing that its name, “Dirty Pop,” wasn’t unwarranted. The clothes were draped with provocative imagery and the silhouettes were some of the most unique in London at the time. And in the middle of it all was Pz, before he was as big as he is now. He later walked in Paris Fashion Week as well, and something else that caught a lot of eyes was his feature in Hedi Slimane’s July 2024 portfolio titled “New London.” For people who don’t know, Hedi Slimane is one of the most influential and controversial designers in the fashion world. His work is still a staple in the fashion houses that he joined, namely Dior Homme, Saint Laurent Paris (formerly Yves Saint Laurent), and Celine. Pz wasn’t just able to be seen in the portfolio, he was the focal point of a photo, showing how his unique fashion sense caught the eye of people documenting the fashion of the youth.
+        </p>
+
+        <img src={pz3} className="w-64 h-64 object-cover rounded-xl mb-4"/>
+        <p className="mb-6 text-lg text-black">
+        “HEDIS BUSSIN’” was Pz’s first true hit song, kickstarting his career in music. The title of this song directly references Hedi Slimane after he took note of his fashion, almost paying homage to a designer that clearly influences his style a lot. It also shows how inseparable fashion and music are from Pz’s identity, everything he does has elements of both. Pz’s art is almost like a runway show, with a curated identity made through fashion while his music perfectly compliments what he wants to do. It seems like beating a dead horse to talk about how fashion interacts with underground music specifically, but Pz is the epitome of these two worlds coinciding. Around this time, Pz’s friend Tezzus and another rapper named diamond* both founded the rap group ØWay, and Pz joined the group, quickly becoming the most popular in the group as he released even more music.
+        </p>
+
+        <p className="mt-10 text-lg text-black">
+        If you want to see more of his music, here are some songs that I would wholeheartedly recommend! I would say Cannes, Havana, TRACK MEET, and HEDIS BUSSIN’ are great places to start. Thank you so much for reading!
+        </p>
+        <p className="mt-10 text-lg text-black">
+        - Vivann
+        </p>
+      </>
+    ),
+  },
+
   {
     id: "lil-shine-career",
     title: "Lil Shine's Career in Retrospect",
