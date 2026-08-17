@@ -44,6 +44,7 @@ import sign3 from "./assets/images/sign3.png";
 import sign4 from "./assets/images/sign4.png";
 import sign5 from "./assets/images/sign5.png";
 import sign6 from "./assets/images/sign6.png";
+import sign7 from "./assets/images/sign7.png";
 import interview1 from "./assets/images/interview1.png";
 import interview2 from "./assets/images/interview2.png";
 import { useEffect } from "react";
@@ -64,7 +65,7 @@ const articles = [
     title: "How Pz' Combines Fashion and Music",
     author: "Vivann",
     date: "August 16, 2026",
-    thumbnail: sign6,
+    thumbnail: sign7,
 
     content: (
       <>
